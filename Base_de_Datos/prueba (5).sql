@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-07-2015 a las 02:13:41
+-- Tiempo de generación: 01-07-2015 a las 21:17:30
 -- Versión del servidor: 5.6.24
 -- Versión de PHP: 5.6.8
 
@@ -30,19 +30,20 @@ CREATE TABLE IF NOT EXISTS `formulario` (
   `ID` int(4) unsigned NOT NULL,
   `NOMBRE` char(20) NOT NULL,
   `APELLIDO` char(20) NOT NULL,
-  `FECHA_NACIMIENTO` date NOT NULL,
+  `F_NAC` date NOT NULL,
   `CEDULA` char(15) NOT NULL,
   `DESCRIPCION` text NOT NULL,
   `Created_at` varchar(90) NOT NULL,
   `updated_at` varchar(90) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `formulario`
 --
 
-INSERT INTO `formulario` (`ID`, `NOMBRE`, `APELLIDO`, `FECHA_NACIMIENTO`, `CEDULA`, `DESCRIPCION`, `Created_at`, `updated_at`) VALUES
-(1, 'Libny', 'Patiño', '2015-06-16', '4-772-1015', 'ghlñ{sa', '2015-06-29 21:17:19', '2015-06-29 21:17:19');
+INSERT INTO `formulario` (`ID`, `NOMBRE`, `APELLIDO`, `F_NAC`, `CEDULA`, `DESCRIPCION`, `Created_at`, `updated_at`) VALUES
+(1, 'Libny', 'Patiño', '2015-06-16', '4-772-1015', 'ghlñ{sa', '2015-06-29 21:17:19', '2015-06-29 21:17:19'),
+(2, 'Kevin', 'Patiño', '2015-06-18', '4-755-472', 'Null', '2015-07-01 01:35:45', '2015-07-01 01:35:45');
 
 --
 -- Índices para tablas volcadas
@@ -62,7 +63,7 @@ ALTER TABLE `formulario`
 -- AUTO_INCREMENT de la tabla `formulario`
 --
 ALTER TABLE `formulario`
-  MODIFY `ID` int(4) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `ID` int(4) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
